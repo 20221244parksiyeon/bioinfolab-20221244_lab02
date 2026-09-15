@@ -30,10 +30,19 @@ Codespace 사용 확인 답안
 ## 2-2. 다. 소스 제어
 다. 소스 제어 - 터미널 없이 커밋하기
 소스 제어 아이콘에 표시된 숫자 3은 현재 Git에서 변경된 파일이 3개 있다는 것을 의미한다.
-'git log -1'을 실행한 결과, 방금 만든 'update' 커밋이 기록되어 있는 것을 확인하였다.
+'git log -1'을 실행한 결과 :
+```text
+commit af76615b5c9db6e539f8d9dd17c6ced24486b6ac (HEAD -> main, origin/main, origin/HEAD)
+Author: park siyeon <20221244@sungshin.ac.kr>
+Date:   Tue Sep 8 22:48:15 2026 +0000
+
+    complete answers
+```
+
+터미널을 이용하는 것보다 소스 제어 화면을 이용하여 커밋하는 것이 더 편했다. 변경된 파일을 화면에서 바로 확인할 수 있고, 명령어를 직접 입력하지 않아도 스테이징, 커밋, 동기화 과정을 순서대로 수행할 수 있기 때문이다.
 
 ## 2-2. 라. 확장
 라. 확장 - 설치된 확장 확인하기
 -Python 확장 버전 : 2026.4.0
 -Jupyter 확장 버전 : 2025. 9.1
-두 확장은 개인 계정에 설치된 것이 아니라 강의자가 미리 설정해 둔 것으로 판단된다.
+두 확장은 개인 계정에 설치된 것이 아니라 강의자가 미리 설정해 둔 것으로 판단된다.저장소의 `.devcontainer/devcontainer.json` 파일을 확인한 결과, 확장 프로그램 설정에 `ms-python.python`과 `ms-toolsai.jupyter`가 포함되어 있었기 때문이다.
